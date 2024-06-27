@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kwikfood tailwind</title>
+    <link rel="stylesheet" href="build.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body class="scroll-smooth">
+    <header class=" stick top-0 z-50 h-16 bg-transparent shadow-slate-500 shadow-md  ">
+        <div class=" flex justify-between items-center w-/4 h-4/5 p-2 mx-auto">
+           <div class="p-2 m- w-1/3
+            "> <a href="#logo"><img src="./img/logo.png" class="m-auto w-2/4 h-2/4" alt="logo"></a></div>
+           <div class=" w-full  hidden md:flex md:mx-2 md:m-3 md:items-center md:justify-between">
+                <div class="font-bold text-green-500 mx-1">
+                    <p class="hover: text-sm hover:border-b-green-600 hover:border-b-2 m-1 hover:mx-0 hover:p-0  md:block">
+                        Need help with your order? Please Call<a href="tel:+2349037031172"> 0903 703 1172</a> 
+                    </p>
+                   
+                    
+                </div>
+
+                <div class="text-sm text-black mx-1">
+                    <p class="hover: font-bold hover:border-b-black hover:border-b-2 m-1 hover:mx-0 hover:p-0  md:hidden lg:block">
+                       <a href="#restaurants">Restaurants</a> 
+                    </p>
+                   
+                    
+                </div>
+
+                <div class="font-semibold  text-green-400  mx-2 flex items-center justify-center">
+                    <p class="hover:text-black capitalize hover: text-sm hover:border-b-black hover:border-b-2 m-1 hover:mx-0 hover:p-0  md:hidden lg:block">
+                        login
+                    </p>
+                   
+                    <div class="mx-2 border-r-2 border-red-400 before:m-1 hidden lg:block"> </div>
+                    <p class="hover:text-black capitalize hover: text-sm hover:border-b-black hover:border-b-2 m-1 hover:mx-0 hover:p-0  md:hidden lg:block">
+                        sign up 
+                    </p>
+                </div>
+               
+           </div>
+           <div class=" ml-auto w-1/12 hidden lg:block">
+            <img src="./img/shopping_cart.svg" class=" w-5 hidden lg:block" alt="shopping_cart">
+            </div>
+           <div class=" ml-auto w-1/12 ">
+            <img src="./img/list.svg" class=" w-4 lg:hidden block" alt="shopping_cart">
+            </div>
+        </div>
+    </header>
+    <main class="flex flex-col flex-1 overflow-hidden">
+        <section id="hero"
+        class="  overflow-hidden bg-fixed bg-hero relative -top-3 my-0  bg-slate-900  bg-center bg-cover bg-no-repeat h-96 max-w-full dark:bg-black dark:text-black" 
+        >   
+           <form class="dark:text-black text-white bg-slate-400 p-1 my-28 mx-auto w-2/3 h-16 shadow-sm shadow-slate-300 rounded-md flex items-center justify-evenly">
+            <div class="flex item-center justify-evenly  w-24 h-5/6 ">
+                <img src="./img/compass.svg" alt="loc" class="w-1/4 m-1 p-1">
+                <input type="text" name="loc" id="loc" class="w-3/4 outline-none border-none p-1 m-1 bg-transparent text " value="osun">
+            </div>
+            <div class="  w-5/12 h-5/6  md:w-4/6 items-center flex">
+                <input type="text" name="search" id="search" class="w-3/4 outline-none border-none p-1 m-1 bg-transparent placeholder:text-white  sm:placeholder:hidden"
+                placeholder="search for restaurant, dishes and cuisine.....">
+            </div>
+            <div class="leading-10 font-bold text-center shadow-md shadow-green-400 w-28 h-5/5  rounded-sm bg-green-500 rounded-tl-xl ``1 rounded-bl-3xl">
+                <button type="button" class="dark:text-black   text-slate-300 capitalize ">find now</button>
+            </div>
+           
+           </form>
+
+           <div class="lg:flex justify-center items-center mx-auto mb-10 -mt-20 w-1/4  h-16 hidden ">
+           <div class=" w-5/6 h-3/4 p-1 m-2">
+            <img src="./img/apple_app2.png" class="h-10  mx-auto my-0 " alt="">
+           </div>
+           <div class=" w-5/6 h-3/4 p-1 m-2">
+            <img src="./img/play_app2.png" class="h-10  mx-auto my-0 " alt="">
+           </div>
+       
+           </div>
+        </section>
+
+        <section class="bg-white text-black dark:bg-black dark:text-slate-200 h-auto">
+            <h1 class="capitalize w-2/4 h-10  p-1 mx-auto my-2 text-center font-bold font-mono text-2xl"> how is works</h1>
+            <div class="  md:flex justify-evenly items-center mx-auto my-7 h-auto w-4/5 m-3 ">
+                <div class=" w-5/12 h-4/5 m-2 mx-auto">
+                    <img src="./img/info_icon_1.svg" class="h-24 mx-auto" alt=" icon">
+                    <h3 class="capitalize my-2 text-center font-semibold before:content-['1.'] before: "> search</h3>
+                    <p class="text-gray-500 w-5/6  mx-auto text-center my-2">Search for restaurants, cuisines with the automatic advance location detection search option.</p>
+                </div>
+                <div class=" w-5/12 h-4/5 m-2 mx-auto">
+                    <img src="./img/info_icon_2.svg" class="h-24 mx-auto" alt="icon">
+                    <h3 class="capitalize my-2 text-center font-semibold before:content-['2.'] before: ">  Order and Pay</h3>
+                    <p class="text-gray-500 w-5/6  mx-auto text-center my-2">Order delicious meal & Pay with Card or Bank transfer through our secure Payment Gateway.</p>
+                </div>
+                <div class=" w-5/12 h-4/5 m-2 mx-auto">
+                    <img src="./img/info_icon_3.svg" class="h-24 mx-auto" alt="icon">
+                    <h3 class="capitalize my-2 text-center font-semibold before:content-['3.'] before: "> Delivery Or Pick-Up</h3>
+                    <p class="text-gray-500 w-5/6  mx-auto text-center my-2">Have your meal delivered Hot & Fast or Self-pick. Enjoy your meal!.</p>
+                </div>
+              
+
+            </div>
+        </section>
+        <br>
+        
+        <section 
+            id="restaurants"
+            class="bg-gray-400 text-black dark:bg-black dark:text-slate-200 h-auto">
+            <h2 class="capitalize   w-[80%] h-10  p-1 mx-auto my-2 text-center font-bold font-mono text-2xl mt-2">top restaurants</h2>
+            <p class="text-gray-400 my-2 w-4/6 mx-auto text-center p-1 "> Popular this month. Top restaurants, cafes, pubs, and bars in and around you serving delightful food right at your doorstep</p>
+
+            <div class="mx-auto m-2 w-2/4 text-center p-2">
+                <button type="button" class="bg-green-500 mx-auto m-2 w-28  h-10 text-center p-2 rounded-tl-lg rounded-bl-3xl rounded-tr-3xl rounded-br-lg" >Lagos</button>
+            </div>
+
+            <div class="w-3/4 h-auto mx-auto my-3 flex-wrap flex items-center justify-center">
+                <div class="m-4  h-auto border dark:text-gray-800 dark:bg-gray-300 bg-slate-400 dark:hover:shadow-light hover:shadow-food w-[280px] rounded-md rounded-bl-[30px]">
+                    <div class="relative w-4/5 h-auto mx-auto mt-2">
+                        <img src="./img/315 (1).png" alt="food" class="w-3/4 mt-2 p-1 m-1">
+                        <span class="absolute w-1/5 bg-red-500   h-auto text-center text-sm ml-1  top-2 right-3">Close</span>
+                        
+                    </div>
+
+                    <div class="ml-6 flex justify-evenly items-center w-3/5  h-10">
+                        <div class="flex justify-evenly items-center w-1/3 h-2/3 ">
+                            <div class="w-3 h-3  border border-red-400">
+                                <div class="w-2 h-2 rounded bg-red-400 mx-auto my-[1.2px] "></div>
+                            </div>
+                            <div class="w-3 h-3 border border-green-400">
+                                <div class="w-2 h-2 rounded bg-green-400 mx-auto my-[1.2px] "></div>
+                            </div>
+                        </div>
+
+                        <p class="font-light">Hah Restaurant</p>
+                    </div>
+                    <p class="font-light ml-7 m-1  p-1  text-xs  w-3/5 ">Fast Food Nigeria</p>
+
+                    <div class="ml-6 flex justify-evenly items-center w-4/5 mb-2 h-10">
+                        <img src="./img/compass.svg"  class="dark:bg-black border-0 ">
+                        <p class="font-light text-[11px]">
+                            308 Murtala Muhammed Way,Yaba,Lagos
+                        </p>
+                    </div>
+                    <div class="w-4/5  border mx-auto border-black my-4"></div>
+                    <div class="ml-6 flex justify-evenly items-center w-4/5 mb-2 h-10">
+                        <p class=" before:content-['⭐'] text-xs font-semibold"> 3.4</p>
+                        <p class=" font-semibold text-xs">30 Mins </p>
+                        <p class=" font-semibold text-xs capitalize">min order #500.00</p>
+                        
+                    </div>
+                    
+
+                </div>
+                <div class="m-4  h-auto border dark:text-gray-800 dark:bg-gray-300 bg-slate-400 dark:hover:shadow-light hover:shadow-food w-[280px] rounded-md rounded-bl-[30px]">
+                    <div class="relative w-4/5 h-auto mx-auto mt-2">
+                        <img src="./img/315 (1).png" alt="food" class="w-3/4 mt-2 p-1 m-1">
+                        <span class="absolute w-1/5 bg-red-500   h-auto text-center text-sm ml-1  top-2 right-3">Close</span>
+                        
+                    </div>
+
+                    <div class="ml-6 flex justify-evenly items-center w-3/5  h-10">
+                        <div class="flex justify-evenly items-center w-1/3 h-2/3 ">
+                            <div class="w-3 h-3  border border-red-400">
+                                <div class="w-2 h-2 rounded bg-red-400 mx-auto my-[1.2px] "></div>
+                            </div>
+                            <div class="w-3 h-3 border border-green-400">
+                                <div class="w-2 h-2 rounded bg-green-400 mx-auto my-[1.2px] "></div>
+                            </div>
+                        </div>
+
+                        <p class="font-light">Hah Restaurant</p>
+                    </div>
+                    <p class="font-light ml-7 m-1  p-1  text-xs  w-3/5 ">Fast Food Nigeria</p>
+
+                    <div class="ml-6 flex justify-evenly items-center w-4/5 mb-2 h-10">
+                        <img src="./img/compass.svg"  class="dark:bg-black border-0 ">
+                        <p class="font-light text-[11px]">
+                            308 Murtala Muhammed Way,Yaba,Lagos
+                        </p>
+                    </div>
+                    <div class="w-4/5  border mx-auto border-black my-4"></div>
+                    <div class="ml-6 flex justify-evenly items-center w-4/5 mb-2 h-10">
+                        <p class=" before:content-['⭐'] text-xs font-semibold"> 3.4</p>
+                        <p class=" font-semibold text-xs">30 Mins </p>
+                        <p class=" font-semibold text-xs capitalize">min order #500.00</p>
+                        
+                    </div>
+                    
+
+                </div>
+                <div class="m-4  h-auto border dark:text-gray-800 dark:bg-gray-300 bg-slate-400 dark:hover:shadow-light hover:shadow-food w-[280px] rounded-md rounded-bl-[30px]">
+                    <div class="relative w-4/5 h-auto mx-auto mt-2">
+                        <img src="./img/315 (1).png" alt="food" class="w-3/4 mt-2 p-1 m-1">
+                        <span class="absolute w-1/5 bg-red-500   h-auto text-center text-sm ml-1  top-2 right-3">Close</span>
+                        
+                    </div>
+
+                    <div class="ml-6 flex justify-evenly items-center w-3/5  h-10">
+                        <div class="flex justify-evenly items-center w-1/3 h-2/3 ">
+                            <div class="w-3 h-3  border border-red-400">
+                                <div class="w-2 h-2 rounded bg-red-400 mx-auto my-[1.2px] "></div>
+                            </div>
+                            <div class="w-3 h-3 border border-green-400">
+                                <div class="w-2 h-2 rounded bg-green-400 mx-auto my-[1.2px] "></div>
+                            </div>
+                        </div>
+
+                        <p class="font-light">Hah Restaurant</p>
+                    </div>
+                    <p class="font-light ml-7 m-1  p-1  text-xs  w-3/5 ">Fast Food Nigeria</p>
+
+                    <div class="ml-6 flex justify-evenly items-center w-4/5 mb-2 h-10">
+                        <img src="./img/compass.svg"  class="dark:bg-black border-0 ">
+                        <p class="font-light text-[11px]">
+                            308 Murtala Muhammed Way,Yaba,Lagos
+                        </p>
+                    </div>
+                    <div class="w-4/5  border mx-auto border-black my-4"></div>
+                    <div class="ml-6 flex justify-evenly items-center w-4/5 mb-2 h-10">
+                        <p class=" before:content-['⭐'] text-xs font-semibold"> 3.4</p>
+                        <p class=" font-semibold text-xs">30 Mins </p>
+                        <p class=" font-semibold text-xs capitalize">min order #500.00</p>
+                        
+                    </div>
+                    
+
+                </div>
+                <div class="m-4  h-auto border dark:text-gray-800 dark:bg-gray-300 bg-slate-400 dark:hover:shadow-light hover:shadow-food w-[280px] rounded-md rounded-bl-[30px]">
+                    <div class="relative w-4/5 h-auto mx-auto mt-2">
+                        <img src="./img/315 (1).png" alt="food" class="w-3/4 mt-2 p-1 m-1">
+                        <span class="absolute w-1/5 bg-red-500   h-auto text-center text-sm ml-1  top-2 right-3">Close</span>
+                        
+                    </div>
+
+                    <div class="ml-6 flex justify-evenly items-center w-3/5  h-10">
+                        <div class="flex justify-evenly items-center w-1/3 h-2/3 ">
+                            <div class="w-3 h-3  border border-red-400">
+                                <div class="w-2 h-2 rounded bg-red-400 mx-auto my-[1.2px] "></div>
+                            </div>
+                            <div class="w-3 h-3 border border-green-400">
+                                <div class="w-2 h-2 rounded bg-green-400 mx-auto my-[1.2px] "></div>
+                            </div>
+                        </div>
+
+                        <p class="font-light">Hah Restaurant</p>
+                    </div>
+                    <p class="font-light ml-7 m-1  p-1  text-xs  w-3/5 ">Fast Food Nigeria</p>
+
+                    <div class="ml-6 flex justify-evenly items-center w-4/5 mb-2 h-10">
+                        <img src="./img/compass.svg"  class="dark:bg-black border-0 ">
+                        <p class="font-light text-[11px]">
+                            308 Murtala Muhammed Way,Yaba,Lagos
+                        </p>
+                    </div>
+                    <div class="w-4/5  border mx-auto border-black my-4"></div>
+                    <div class="ml-6 flex justify-evenly items-center w-4/5 mb-2 h-10">
+                        <p class=" before:content-['⭐'] text-xs font-semibold"> 3.4</p>
+                        <p class=" font-semibold text-xs">30 Mins </p>
+                        <p class=" font-semibold text-xs capitalize">min order #500.00</p>
+                        
+                    </div>
+                    
+
+                </div>
+                <div class="m-4  h-auto border dark:text-gray-800 dark:bg-gray-300 bg-slate-400 dark:hover:shadow-light hover:shadow-food w-[280px] rounded-md rounded-bl-[30px]">
+                    <div class="relative w-4/5 h-auto mx-auto mt-2">
+                        <img src="./img/315 (1).png" alt="food" class="w-3/4 mt-2 p-1 m-1">
+                        <span class="absolute w-1/5 bg-red-500   h-auto text-center text-sm ml-1  top-2 right-3">Close</span>
+                        
+                    </div>
+
+                    <div class="ml-6 flex justify-evenly items-center w-3/5  h-10">
+                        <div class="flex justify-evenly items-center w-1/3 h-2/3 ">
+                            <div class="w-3 h-3  border border-red-400">
+                                <div class="w-2 h-2 rounded bg-red-400 mx-auto my-[1.2px] "></div>
+                            </div>
+                            <div class="w-3 h-3 border border-green-400">
+                                <div class="w-2 h-2 rounded bg-green-400 mx-auto my-[1.2px] "></div>
+                            </div>
+                        </div>
+
+                        <p class="font-light">Hah Restaurant</p>
+                    </div>
+                    <p class="font-light ml-7 m-1  p-1  text-xs  w-3/5 ">Fast Food Nigeria</p>
+
+                    <div class="ml-6 flex justify-evenly items-center w-4/5 mb-2 h-10">
+                        <img src="./img/compass.svg"  class="dark:bg-black border-0 ">
+                        <p class="font-light text-[11px]">
+                            308 Murtala Muhammed Way,Yaba,Lagos
+                        </p>
+                    </div>
+                    <div class="w-4/5  border mx-auto border-black my-4"></div>
+                    <div class="ml-6 flex justify-evenly items-center w-4/5 mb-2 h-10">
+                        <p class=" before:content-['⭐'] text-xs font-semibold"> 3.4</p>
+                        <p class=" font-semibold text-xs">30 Mins </p>
+                        <p class=" font-semibold text-xs capitalize">min order #500.00</p>
+                        
+                    </div>
+                    
+
+                </div>
+                <div class="m-4  h-auto border dark:text-gray-800 dark:bg-gray-300 bg-slate-400 dark:hover:shadow-light hover:shadow-food w-[280px] rounded-md rounded-bl-[30px]">
+                    <div class="relative w-4/5 h-auto mx-auto mt-2">
+                        <img src="./img/315 (1).png" alt="food" class="w-3/4 mt-2 p-1 m-1">
+                        <span class="absolute w-1/5 bg-red-500   h-auto text-center text-sm ml-1  top-2 right-3">Close</span>
+                        
+                    </div>
+
+                    <div class="ml-6 flex justify-evenly items-center w-3/5  h-10">
+                        <div class="flex justify-evenly items-center w-1/3 h-2/3 ">
+                            <div class="w-3 h-3  border border-red-400">
+                                <div class="w-2 h-2 rounded bg-red-400 mx-auto my-[1.2px] "></div>
+                            </div>
+                            <div class="w-3 h-3 border border-green-400">
+                                <div class="w-2 h-2 rounded bg-green-400 mx-auto my-[1.2px] "></div>
+                            </div>
+                        </div>
+
+                        <p class="font-light">Hah Restaurant</p>
+                    </div>
+                    <p class="font-light ml-7 m-1 h-0 p-1 text-xs w-3/5 ">Fast Food Nigeria</p>
+
+                    <div class="ml-6 flex justify-evenly items-center w-4/5 mb-2 h-10">
+                        <img src="./img/compass.svg"  class="dark:bg-black border-0 ">
+                        <p class="font-light text-[11px]">
+                            308 Murtala Muhammed Way,Yaba,Lagos
+                        </p>
+                    </div>
+                    <div class="w-4/5  border mx-auto border-black my-4"></div>
+                    <div class="ml-6 flex justify-evenly items-center w-4/5 mb-2 h-10">
+                        <p class=" before:content-['⭐'] text-xs font-semibold"> 3.4</p>
+                        <p class=" font-semibold text-xs">30 Mins </p>
+                        <p class=" font-semibold text-xs capitalize">min order #500.00</p>
+                        
+                    </div>
+                    
+
+                </div>
+                
+                
+            </div>
+            <div class="mx-auto m-2 w-5/12 text-center p-2">
+                <button type="button" class="bg-green-500 mx-auto m-2 w-44  h-10 text-center text-xs p-2 rounded-tl-lg rounded-bl-3xl rounded-tr-3xl rounded-br-lg" >VIEW ALL RESTAURANT</button>
+            </div>
+        </section>
+
+        <br>
+
+        <section class="bg-slate-100 text-black dark:bg-black dark:text-slate-200 h-auto">
+            <h2 class="capitalize   w-[80%] h-10  p-1 mx-auto my-2 text-center font-bold font-mono text-2xl mt-2">cuisines</h2>
+            <p class="text-gray-400 my-2 w-4/6 mx-auto text-center p-1 ">
+                Hungry? Have a look to the best food cuisine restaurants in your city. Order food online at Multi Cuisine Restaurants around you.
+
+            </p>
+
+            <div 
+            class="flex items-center  justify-evenly w-2/3 h-[200px] mx-auto m-4 ">
+                <div class="h-auto  my-5 w-[150px] hover:bg-slate-400 m-2">
+                    <img src="./img/387 (1).jpg" class="w-9/12 mx-auto my-2" alt="image">
+                    <p class="text-center mx-auto font-semibold  mb-2 text-xs  w-2/3">pizzia</p>
+                </div>
+                <div class="h-auto  my-5 w-[150px] hover:bg-slate-400 m-2">
+                    <img src="./img/387 (1).jpg" class="w-9/12 mx-auto my-2" alt="image">
+                    <p class="text-center mx-auto font-semibold  mb-2 text-xs  w-2/3">pizzia</p>
+                </div>
+                <div class="hidden md:block h-auto  my-5 w-[150px] hover:bg-slate-400 m-2">
+                    <img src="./img/387 (1).jpg" class=" w-9/12 mx-auto my-2" alt="image">
+                    <p class="text-center mx-auto font-semibold  mb-2 text-xs  w-2/3">pizzia</p>
+                </div>
+                <div class="h-auto hidden lg:block my-5 w-[150px] hover:bg-slate-400 m-2">
+                    <img src="./img/387 (1).jpg" class="w-9/12 mx-auto my-2" alt="image">
+                    <p class="text-center mx-auto font-semibold  mb-2 text-xs  w-2/3">pizzia</p>
+                </div>
+                <div class="h-auto hidden lg:block my-5 w-[150px] hover:bg-slate-400 m-2">
+                    <img src="./img/387 (1).jpg" class="w-9/12 mx-auto my-2" alt="image">
+                    <p class="text-center mx-auto font-semibold  mb-2 text-xs  w-2/3">pizzia</p>
+                </div>
+            </div>
+
+           
+        </section>
+    </main>
+    <br>
+    <footer class="bg-blue-900  border dark:bg-black dark:text-slate-200">
+        <section class="w-3/4 h-auto mx-auto my-3 md:flex justify-evenly ">
+            
+            <div class="  h-auto  m-3 p-1">
+                <h3 class="font-semibold text-xl w-fit m-3  capitalize">information</h3>
+                <p class="font-light text-xl  p-1 m-3 text-gray-600 ml-5 w-fit hover:border-gray-500 hover:border-b-2 capitalize">FAQ</p>
+                <p class="font-light text-xl  p-1 m-3 text-gray-600 ml-5 w-fit hover:border-gray-500 hover:border-b-2 capitalize">affilated</p>
+                <p class="font-light text-xl  p-1 m-3 text-gray-600 ml-5 w-fit hover:border-gray-500 hover:border-b-2 capitalize">advertise</p>
+                <p class="font-light text-xl  p-1 m-3 text-gray-600 ml-5 w-fit hover:border-gray-500 hover:border-b-2 capitalize">conatct us</p>
+                <p class="font-light text-xl  p-1 m-3 text-gray-600 ml-5 w-fit hover:border-gray-500 hover:border-b-2 capitalize">privacy policy</p>
+                <p class="font-light text-xl  p-1 m-3 text-gray-600 ml-5 w-fit hover:border-gray-500 hover:border-b-2 capitalize">term and conditions</p>
+
+                <p class=" font-light text-xl  p-1 m-3 text-gray-600 ml-5 w-fit hover:border-gray-500 hover:border-b-2 capitalize">about us</p>
+               
+
+            </div>
+            <div class="  h-auto  m-3 p-1">
+                <h3 class="font-semibold text-xl  m-3 w-fited   capitalize">Popular city</h3>
+                <p class="font-light text-xl  p-1 m-3 text-gray-600 ml-5 w-fit hover:border-gray-500 hover:border-b-2 capitalize">Lagos</p>
+                
+
+            </div>
+            <div class=" h-auto  m-3 p-1">
+                <h3 class="font-semibold text-xl  m-3  capitalize">my acctount</h3>
+                <p class="font-light text-xl  p-1 m-3 text-gray-600 ml-5 w-fit hover:border-gray-500 hover:border-b-2 capitalize">my order</p>
+                <p class="font-light text-xl  p-1 m-3 text-gray-600 ml-5 w-fit hover:border-gray-500 hover:border-b-2 capitalize">my previews</p>
+                <p class="font-light text-xl  p-1 m-3 text-gray-600 ml-5 w-fit hover:border-gray-500 hover:border-b-2 capitalize">my acctount</p>
+            </div>
+        
+        </section>
+        <div class="w-2/3 mx-auto border m-4 border-black dark:border-white"></div>
+
+        <div class="mx-auto h-20 w-2/3 m-5">
+            
+        <div class="flex items-center justify-start  ml-7 h-2/3 w-2/3 my-3">
+            <div class="w-10 h-10 m-1 border rounded-full hover:bg-blue-500 dark:hover:bg-black ">
+                <img src="./img/facebook.svg"  class="mx-auto my-1.5 h-2/3" alt="">
+            </div>
+            <div class="w-10 h-10 m-1 border rounded-full hover:bg-blue-300 dark:hover:bg-black ">
+                <img src="./img/twitter-x.svg"  class="mx-auto my-1.5 h-2/3" alt="">
+            </div>
+            <div class="w-10 h-10 m-1 border rounded-full hover:bg-pink-500 dark:hover:bg-black ">
+                <img src="./img/instagram.svg"  class="mx-auto my-1.5 h-2/3" alt="">
+            </div>
+            <div class="w-10 h-10 m-1 border rounded-full hover:bg-yellow-500 dark:hover:bg-black ">
+                <img src="./img/google.svg"  class="mx-auto my-1.5 h-2/3" alt="">
+            </div>
+
+        </div>
+        </div>
+        <div class="mx-auto h-20 w-2/3 m-5 flex items-center justify-between">
+            <p class="font-semibold m-1 capitalize text-xs">copyright &copy; 2024 wetwan</p>
+            <img src="./img/cards.png" alt="cards" class="w-32 m-1 hidden md:block">
+            
+            
+        </div>
+    </footer>
+        
+</body>
+</html>
